@@ -1,0 +1,31 @@
+<div class="mainDiv">
+    <div class="screen">
+        <span *ngFor="let value of completeArray"><span *ngIf="value != '='">{{value}}</span></span>
+    </div>
+    <div class="buttonDiv">
+        <div class="numbers">
+                <button class= "zeroButton" (click)="clr()">clr</button>
+            <button class= "numberButton" (click)='selectNum(1)'>1</button>
+            <button class= "numberButton" (click)='selectNum(2)'>2</button>
+            <button class= "numberButton" (click)='selectNum(3)'>3</button>
+            <button class= "numberButton" (click)='selectNum(4)'>4</button>
+            <button class= "numberButton" (click)='selectNum(5)'>5</button>
+            <button class= "numberButton" (click)='selectNum(6)'>6</button>
+            <button class= "numberButton" (click)='selectNum(7)'>7</button>
+            <button class= "numberButton" (click)='selectNum(8)'>8</button>
+            <button class= "numberButton" (click)='selectNum(9)'>9</button>
+            <button class= "zeroButton" (click)='selectNum(0)'>0</button>
+        </div>
+        <div class="operators">
+                
+                <button class= "zeroButton" (click)="selectOperator('=')">=</button>
+                <button class= "zeroButton" (click)="selectOperator('/')">/</button>
+                <button class= "zeroButton" (click)="selectOperator('*')">*</button>
+            <button class= "zeroButton" (click)="selectOperator('+')">+</button>
+          
+            <button class= "zeroButton" (click)="selectOperator('-')">-</button>
+            
+            
+        </div>
+    </div>
+</div>
